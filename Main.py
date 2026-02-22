@@ -10,14 +10,8 @@ stml.markdown("""
 stml.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #121212 0%, #0f2027 100%); /* Gradiente Escuro Moderno */
+        background: linear-gradient(135deg, #121212 0%, #0f2027 100%);
         background-attachment: fixed;
-    }
-
-    [data-testid="stVerticalBlock"] {
-        background-color: rgba(255, 255, 255, 0.02);
-        padding: 10px;
-        border-radius: 10px;
     }
     
     .stWidgetLabel p, label, .st-at, .st-ae {
@@ -28,8 +22,19 @@ stml.markdown("""
     }
 
     .stTextInput input, .stNumberInput input {
+        color: #000000 !important; /* Texto digitado fica PRETO */
+        background-color: #f0f2f6 !important; /* Fundo cinza claro */
+        font-weight: bold !important;
+    }
+
+    .stMarkdown p, .stText p {
         color: white !important;
-        background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    [data-testid="stVerticalBlock"] {
+        background-color: rgba(255, 255, 255, 0.02);
+        padding: 10px;
+        border-radius: 10px;
     }
     </style>
 """, unsafe_allow_html=True)
