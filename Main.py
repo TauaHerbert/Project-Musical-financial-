@@ -9,17 +9,27 @@ stml.markdown("""
 
 stml.markdown("""
     <style>
-    /* Estilizando o fundo da página inteira */
     .stApp {
         background: linear-gradient(135deg, #121212 0%, #0f2027 100%); /* Gradiente Escuro Moderno */
         background-attachment: fixed;
     }
 
-    /* Efeito opcional: Deixar os containers levemente transparentes */
     [data-testid="stVerticalBlock"] {
         background-color: rgba(255, 255, 255, 0.02);
         padding: 10px;
         border-radius: 10px;
+    }
+    
+    .stWidgetLabel p, label, .st-at, .st-ae {
+        color: white !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+        text-shadow: 1px 1px 2px black !important;
+    }
+
+    .stTextInput input, .stNumberInput input {
+        color: white !important;
+        background-color: rgba(255, 255, 255, 0.1) !important;
     }
     </style>
 """, unsafe_allow_html=True)
