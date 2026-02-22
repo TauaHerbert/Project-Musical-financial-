@@ -21,10 +21,11 @@ stml.markdown("""
         text-shadow: 1px 1px 2px black !important;
     }
 
-    .stTextInput input, .stNumberInput input {
-        color: #000000 !important; /* Texto digitado fica PRETO */
-        background-color: #f0f2f6 !important; /* Fundo cinza claro */
-        font-weight: bold !important;
+    .stTextInput input, .stNumberInput input, .stDateInput input {
+        color: #000000 !important;
+        background-color: #e1e5eb !important;
+        font-weight: 400 !important;
+        border: 1px solid #1E90FF !important;
     }
 
     .stMarkdown p, .stText p {
@@ -35,6 +36,10 @@ stml.markdown("""
         background-color: rgba(255, 255, 255, 0.02);
         padding: 10px;
         border-radius: 10px;
+    }
+    
+    div[data-baseweb="calendar"] button, div[data-baseweb="calendar"] div {
+        color: #000000 !important;
     }
     </style>
 """, unsafe_allow_html=True)
